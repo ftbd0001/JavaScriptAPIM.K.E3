@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+#photographerName {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+#likeCount {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+#history {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#history img {
+    width: 100px;
+    margin: 5px;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#history img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h3 {
+    color: #444;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    img, #history img {
+        max-width: 95%;
+        width: auto;
+    }
+}
